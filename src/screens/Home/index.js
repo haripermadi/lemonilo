@@ -307,7 +307,7 @@ class Home extends Component {
     // console.log('home--render--------', this.state)
     return (
       <SafeAreaView>
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
           <View style={[styles.containerHeader, styles.mhMedium]}>
             <Text style={[styles.headerTitle]}>Discover</Text>
             <Icon name="bell-outline" style={styles.iconStyle} />
@@ -340,7 +340,7 @@ class Home extends Component {
           {this.renderTrending('Trending Right Now')}
           {this.renderTrending('Top Recipes')}
           {this.renderRecipes()}
-        </View>
+        </ScrollView>
       </SafeAreaView>
     )
   }
